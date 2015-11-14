@@ -14,7 +14,7 @@ module.exports = {
     ]
   },
   output: {
-    library: 'Hooyaks',
+    library: 'HooyaksReact',
     libraryTarget: 'umd'
   },
   externals: {
