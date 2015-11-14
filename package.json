@@ -1,8 +1,8 @@
 {
   "name": "hooyaks-react",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "React bindings for hooyaks",
+  "main": "./lib/index.js",
   "scripts": {
   },
   "repository": {
