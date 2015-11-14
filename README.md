@@ -1,4 +1,6 @@
-# lol
+# wat
+
+react bindings for hooyaks (learning react-redux by reimplementing it)
 
 # development
 
