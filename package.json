@@ -4,14 +4,17 @@
   "description": "React bindings for hooyaks",
   "main": "./lib/index.js",
   "scripts": {
-    "clean": "rimraf lib dist",
-    "build:umd": "webpack src/index.js dist/hooyaks.js && NODE_ENV=production webpack src/index.js dist/hooyaks.min.js --config webpack.config.development.js",
-    "build:umd:min": "webpack src/index.js dist/hooyaks.js && NODE_ENV=production webpack src/index.js dist/hooyaks.min.js --config webpack.config.production.js",
+    "clean": "rimraf lib dist coverage",
+    "build:lib": "babel src --out-dir lib",
+    "build:umd": "webpack src/index.js dist/hooyaks-react.min.js --config webpack.config.development.js",
+    "build:umd:min": "webpack src/index.js dist/hooyaks-react.min.js --config webpack.config.production.js",
+    "build": "npm run build:lib && npm run build:umd && npm run build:umd:min",
     "lint": "eslint test src examples",
     "test": "NODE_ENV=test mocha",
     "test:watch": "npm test -- --watch",
-    "test:cov": "babel-node ./node-modules/.bin/isparta cover ./node_modules/.bin/_mocha",
+    "test:cov": "babel-node $(npm bin)/isparta cover $(npm bin)/_mocha",
     "prepublish": "npm run lint && npm run test && npm run clean && npm run build && npm run build:umd"
+
   },
   "repository": {
     "type": "git",
