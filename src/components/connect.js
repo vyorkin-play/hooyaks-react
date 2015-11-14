@@ -1,0 +1,3 @@
+export default (mapState, mapDispatch) => {
+
+};

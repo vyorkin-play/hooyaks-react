@@ -14,7 +14,6 @@
     "test:watch": "npm test -- --watch",
     "test:cov": "babel-node $(npm bin)/isparta cover $(npm bin)/_mocha",
     "prepublish": "npm run lint && npm run test && npm run clean && npm run build && npm run build:umd"
-
   },
   "repository": {
     "type": "git",
@@ -41,6 +40,7 @@
     "expect": "^1.8.0",
     "isparta": "^3.0.3",
     "mocha": "^2.2.5",
+    "react-addons-test-utils": "^0.14.2",
     "rimraf": "^2.4.2",
     "webpack": "^1.11.0",
     "webpack-merge": "^0.3.0"
