@@ -39,6 +39,7 @@
     "eslint-plugin-react": "^3.2.2",
     "expect": "^1.8.0",
     "isparta": "^3.0.3",
+    "jsdom": "^7.0.2",
     "mocha": "^2.2.5",
     "react-addons-test-utils": "^0.14.2",
     "rimraf": "^2.4.2",

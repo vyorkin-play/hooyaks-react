@@ -1,7 +1,9 @@
 import { Component } from 'react';
 
-import { storeShape } from './shapes/store';
 import { bindActionCreators } from 'hooyaks';
+
+import shallowEqual from '../utils/shallowEqual';
+import { storeShape } from './shapes/store';
 
 export default (mapState, mapDispatch, options = {}) => {
   const { pure = true } = options;
