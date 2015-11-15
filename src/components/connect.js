@@ -23,12 +23,11 @@ export default (mapState, mapDispatch, options = {}) => {
       }
 
       shouldComponentUpdate(nextProps, nextState) {
-        if (!pure) {
-        }
+        return true; // TODO: does it matter right now?
       }
 
       render() {
-        return <Component {this.nextState} />
+        return <Component {...this.nextState} />
       }
     }
   };
