@@ -42,16 +42,25 @@
     "eslint-config-airbnb": "0.1.0",
     "eslint-plugin-react": "^3.2.2",
     "expect": "^1.8.0",
+    "ghooks": "1.0.1",
     "isparta": "^3.0.3",
     "jsdom": "^7.0.2",
     "mocha": "^2.2.5",
     "react-addons-test-utils": "^0.14.2",
     "rimraf": "^2.4.2",
+    "semantic-release": "^4.3.5",
     "webpack": "^1.11.0",
-    "webpack-merge": "^0.3.0",
-    "semantic-release": "^4.3.5"
+    "webpack-merge": "^0.3.0"
   },
   "dependencies": {
     "is-plain-obj": "^1.1.0"
+  },
+  "czConfig": {
+    "path": "node_modules/cz-conventional-changelog"
+  },
+  "config": {
+    "ghooks": {
+      "pre-commit": "npm run test"
+    }
   }
 }
