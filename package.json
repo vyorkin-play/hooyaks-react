@@ -28,7 +28,7 @@
   },
   "homepage": "https://github.com/vyorkin/hooyaks-react#readme",
   "peerDependencies": {
-    "hooyaks": "vyorkin/hooyaks",
+    "hooyaks": "vyorkin-play/hooyaks",
     "react": "^0.14.0"
   },
   "devDependencies": {
