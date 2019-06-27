@@ -1,6 +1,6 @@
 # wat
 
-react bindings for hooyaks (learning react-redux by reimplementing it)
+react bindings for hooyaks (ya tut oru)
 
 # development
 
